@@ -33,7 +33,21 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
-  }
+    },
+    vendor: [
+      'axios',
+      'vue-i18n'
+    ]
+  },
+  plugins: [
+    // Will inject the plugin in the $root app and also in the context as `i18n`
+    { src: '~plugins/i18n.js', injectAs: 'i18n' }
+  ],
+  modules:[
+    ['nuxt-buefy', { css: false }]
+  ],
+  css: [
+    '~/assets/style.scss'
+  ]
 }
 

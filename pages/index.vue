@@ -1,23 +1,22 @@
 <template>
   <div class="section">
-    <div class="columns">
-      <aside class="column is-2">
-        <nav class="menu">
-          <p class="menu-label">
-            General
-          </p>
-        </nav>
-      </aside>
+    <div class="content">
+      <figure class="iamge">
+        <img src="~assets/img/index70_up.png" />
+      </figure>
+      <ApplicationOfAlibaba />
     </div>
   </div>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import ApplicationOfAlibaba from '~/components/main/ApplicationOfAlibaba'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    ApplicationOfAlibaba
   },
   layout: 'default'
 }
